@@ -1,8 +1,9 @@
+var nr = require('newrelic');
 var express = require('express');
 var app = express();
 var request = require('request');
 var path = require('path');
-
+require('newrelic');
 
 app.use(express.static(path.join(__dirname, 'client')));
 
